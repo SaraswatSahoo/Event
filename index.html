@@ -10,17 +10,19 @@
     <header>
         <img src="Logo_final.b75cdbef4fed48981612.png" alt="" class="logo-img">
         <div class="menu">
-            <a href="" class="Home">Home</a>
+            <a href="#hero" class="Home">Home</a>
             <a href="" class="Event">Our Event</a>
-            <a href="" class="register">Register</a>
+            <a href="#register-sec" class="register">Register</a>
             <a href="" class="contact">Contact Us</a>
         </div>
     </header>
-    <section class="hero">
+    
+    <section id="hero">
         <h1>SAEINDIA</h1>
         <p>We are the Society of Automotive Engineers Collegiate Club of National</p>
         <p>Institute of Technology Durgapur</p>
     </section>
+
     <section class="knowUs">
         <div class="aboutUs">
             <h1>What is SAE?</h1>
@@ -38,15 +40,65 @@
         </div>
         <img src="https://www.saenitdgp.com/static/media/About.278cf9efb2795373d4ea.gif" alt="" class="dis-img">
     </section>
+
     <section class="event-sec"></section>
-    <section class="register-sec">
-        <p>
-            To register for our event fill in the registration form. 
-            <button class="register-btn">Register</button>
-            To know more about our event 
-            <a>Click Here</a>
-        </p>
+    <section id="register-sec">
+        <h1>Registration</h1>
+        <div class="res-dis">
+            <div>
+                <p>
+                    To register for our event fill in the registration form. 
+                    <button class="register-btn" onclick="showForm()">Register</button>
+                </p>
+                <p>
+                    To know more about our event. 
+                    <a href="">Click Here</a>
+                </p>
+            </div>
+            <img src="SAE Event.png" alt="" class="qr-Code">
+        </div>
     </section>
+
+    <section class="reg-form">
+        <div id="container">
+            <div class="title">Registration</div>
+            <div class="content">
+                <form action="">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Full Name</span>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="text" placeholder="Enter your Email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Phone Number</span>
+                            <input type="text" placeholder="Enter your Number" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Roll Number</span>
+                            <input type="text" placeholder="Enter your Roll No." required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Registration Number</span>
+                            <input type="text" placeholder="Enter your Reg. No." required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Department</span>
+                            <input type="text" placeholder="Enter Your Department" required>
+                        </div>
+                    </div>
+                </form>
+                <button class="btn" onclick="submit()">Submit</button>
+            </div>
+        </div>
+        <div id="submit-success">
+                Form Submitted Successfully!!
+        </div>
+    </section>
+
     <section class="contact-sec"></section>
 </body>
 <script src="function.js"></script>
