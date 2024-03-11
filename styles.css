@@ -324,3 +324,54 @@ form .input-box .details{
     color: white;
     background-color: transparent;
 }
+
+#event-sec h1{
+    color: rgba(255, 0, 0, 0.765);
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+#event-sec{
+    color: white;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#event-sec h2{
+    color: white;
+    font-size: 40px;
+}
+
+#event-sec p{
+    width: 500px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.dis-eve{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+}
+
+.dis{
+    text-align: center;
+}
+
+#presentation{
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#presentation a{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+}
